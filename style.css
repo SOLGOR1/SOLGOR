@@ -63,7 +63,7 @@ header ul a {
   width: 90%; /* Adjust width as needed */
   max-width: 900px; /* Adjust max-width as needed */
   position: relative;
-  z-index: 11; /* Ensure the panel is above the parallax layers */
+  z-index: 15; /* Ensure the panel is above the parallax layers */
 }
 
 .content-panel h2,

@@ -2,6 +2,39 @@
 
 *,
 *::before,
+.content-panel {
+  background: linear-gradient(145deg, #333333, #1a1a1a);
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  margin: 50px auto; /* Adjust margin as needed */
+  width: 80%; /* Adjust width as needed */
+  max-width: 600px; /* Adjust max-width as needed */
+  position: relative;
+  z-index: 999; /* Ensure the panel is above the parallax layers */
+}
+
+.content-panel h2,
+.content-panel h1 {
+  margin: 10px 0;
+  color: white;
+}
+
+/* For phones */
+@media (max-width: 768px) {
+  .content-panel {
+    margin: 30px auto; /* Adjust margin for phones */
+    width: 90%; /* Adjust width for phones */
+  }
+}
+
+/* For tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .content-panel {
+    margin: 40px auto; /* Adjust margin for tablets */
+    width: 80%; /* Adjust width for tablets */
+  }
+}
 *::after {
   padding: 0;
   margin: 0;
@@ -464,36 +497,4 @@ main {
   }
 }
 
-.content-panel {
-  background: linear-gradient(145deg, #333333, #1a1a1a);
-  border-radius: 20px;
-  padding: 20px;
-  text-align: center;
-  margin: 50px auto; /* Adjust margin as needed */
-  width: 80%; /* Adjust width as needed */
-  max-width: 600px; /* Adjust max-width as needed */
-  position: relative;
-  z-index: 999; /* Ensure the panel is above the parallax layers */
-}
 
-.content-panel h2,
-.content-panel h1 {
-  margin: 10px 0;
-  color: white;
-}
-
-/* For phones */
-@media (max-width: 768px) {
-  .content-panel {
-    margin: 30px auto; /* Adjust margin for phones */
-    width: 90%; /* Adjust width for phones */
-  }
-}
-
-/* For tablets */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .content-panel {
-    margin: 40px auto; /* Adjust margin for tablets */
-    width: 80%; /* Adjust width for tablets */
-  }
-}

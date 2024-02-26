@@ -473,7 +473,7 @@ main {
   width: 80%; /* Adjust width as needed */
   max-width: 600px; /* Adjust max-width as needed */
   position: relative;
-  z-index: 1; /* Ensure the panel is above the parallax layers */
+  z-index: 999; /* Ensure the panel is above the parallax layers */
 }
 
 .content-panel h2,

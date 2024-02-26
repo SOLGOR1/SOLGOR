@@ -59,7 +59,7 @@ header ul a {
   border-radius: 20px;
   padding: 20px;
   text-align: center;
-  margin: 100px auto; /* Adjust margin as needed */
+  margin: 150px auto 50px; /* Adjust margin as needed */
   width: 90%; /* Adjust width as needed */
   max-width: 900px; /* Adjust max-width as needed */
   position: relative;

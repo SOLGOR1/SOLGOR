@@ -8,14 +8,79 @@
   <title>SOLGOR</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css">
+<style>
+  /* Neue Styles für die Roadmap */
+  .section {
+    color: #fff; /* White text color */
+  }
+
+  .roadmap-status {
+    margin-bottom: 30px;
+    background-color: #333; /* Dark background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  }
+
+  .roadmap-status h2 {
+    color: #fff; /* White text color */
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .roadmap-status ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .roadmap-status ul h2 {
+    color: #ccc; /* Light gray text color */
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .roadmap-status ul li {
+    position: relative;
+    color: #fff; /* White text color */
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+
+  .roadmap-status ul li::before {
+    content: "\2022"; /* Bullet point */
+    color: #28a745; /* Green bullet */
+    display: inline-block;
+    width: 1em;
+    margin-right: 10px;
+  }
+
+  /* Stil für Done-Status */
+  .roadmap-status.done ul li {
+    color: #28a745; /* Green color for completed tasks */
+  }
+
+  /* Stil für In-Progress-Status */
+  .roadmap-status.in-progress ul li {
+    color: #ffc107; /* Yellow color for in-progress tasks */
+  }
+
+  /* Hover effect for list items */
+  .roadmap-status ul li:hover {
+    color: #ddd; /* Light gray text color on hover */
+  }
+</style>
 </head>
 
 <body>
   <header class="hide">
     <nav>
       <a href="https://solgor1.github.io/SOLGOR/index.html" target="_blank">
-  <img src="img/logo.png" alt="Solgor" class="logo">
-</a>
+        <img src="img/logo.png" alt="Solgor" class="logo">
+      </a>
       <ul>
         <li><a href="https://solgor1.github.io/SOLGOR/trade.html">Trade</a></li>
         <li><a href="https://solgor1.github.io/SOLGOR/roadmap.html">Roadmap</a></li>
@@ -44,25 +109,27 @@
     <img src="img/mountain_7.png" data-speedx="0.1" data-speedy="0.1" data-speedz="0" data-rotation="0.09"
       data-distance="2000" class="parallax mountain-7">
     <div class="content-panel">
-<!-- Roadmap Section -->
 <div class="section">
   <h2>Roadmap</h2>
   <!-- Done -->
-  <div class="roadmap-status">
-    <h2>Done</h2>
+  <div class="roadmap-status done">
+    <h3>Done</h3>
     <ul>
-      <h2>LP burn</h2>
-      <h2>Twitter airdrop</h2>
-      <h2>Coingecko terminal</h2>
-      <h2>Social media update</h2>
+      <li>LP burn</li>
+      <li>Twitter airdrop</li>
+      <li>Coingecko terminal</li>
+      <li>Social media update</li>
     </ul>
   </div>
   <!-- In Progress -->
-  <div class="roadmap-status">
-    <h2>In Progress</h2>
+  <div class="roadmap-status in-progress">
+    <h3>In Progress</h3>
     <ul>
-      <h2>Homepage update</h2>
-      <h2>Merch giveaways</h2>
+      <li>Homepage Update</li>
+      <li>Merch Giveaways</li>
+      <li>More Airdrops</li>
+      <li>More Liquidity</li>
+      <li>More Apes</li>
     </ul>
   </div>
 </div>

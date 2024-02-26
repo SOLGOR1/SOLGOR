@@ -10,6 +10,10 @@
   <link rel="stylesheet" href="style.css">
 <style>
   /* Neue Styles für die Roadmap */
+  .section {
+    color: #fff; /* White text color */
+  }
+
   .roadmap-status {
     margin-bottom: 30px;
     background-color: #333; /* Dark background */
@@ -55,12 +59,12 @@
   }
 
   /* Stil für Done-Status */
-  .done {
+  .roadmap-status.done ul li {
     color: #28a745; /* Green color for completed tasks */
   }
 
   /* Stil für In-Progress-Status */
-  .in-progress {
+  .roadmap-status.in-progress ul li {
     color: #ffc107; /* Yellow color for in-progress tasks */
   }
 

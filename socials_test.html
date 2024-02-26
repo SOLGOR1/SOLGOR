@@ -7,103 +7,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SOLGOR</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
-  <style>
-    /* Hier füge ich das Styling direkt ein */
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
-    }
+  <link rel="stylesheet" href="style.css">
+<style>
+.social-link {
+    margin-right: 60px; /* Adjust this value to increase or decrease the space */
+}
+.content-panel {
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: darkgrey;
+    height: 100%;
+    display: flex; /* Flexbox verwenden, um das Layout anzupassen */
+    flex-direction: column; /* Anordnung der Elemente in einer Spalte */
+}
 
-    header {
-      background-color: #333;
-      padding: 20px;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 1000;
-    }
-
-    header nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    header nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    header nav ul li {
-      display: inline;
-      margin-right: 20px;
-    }
-
-    header nav ul li a {
-      text-decoration: none;
-      color: #fff;
-      font-weight: bold;
-    }
-
-    .logo {
-      max-width: 100px;
-    }
-
-    main {
-      padding-top: 100px; /* Platz für das feste Header-Element */
-      position: relative;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    .content-panel {
-      overflow-y: scroll;
-      scrollbar-width: thin;
-      scrollbar-color: darkgrey;
-      max-height: 80vh;
-      padding: 20px;
-      background-color: rgba(255, 255, 255, 0.8);
-      border-radius: 10px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    }
-
-    .social-links-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 20px;
-    }
-
-    .social-link {
-      margin: 10px 0;
-    }
-
-    .social-link img {
-      width: 50px;
-      height: auto;
-      border-radius: 50%;
-      transition: transform 0.3s ease-in-out;
-    }
-
-    .social-link img:hover {
-      transform: scale(1.2);
-    }
-  </style>
+.social-links-container {
+    flex: 1; /* Damit die Social-Links den verfügbaren Platz einnehmen */
+    padding-right: 10px; /* Damit die Scrollleiste nicht über die Social Links geht */
+    text-align: center; /* Center align the content */
+}
+</style>
 </head>
 
 <body>
-  <header>
+  <header class="hide">
     <nav>
       <a href="https://solgor1.github.io/SOLGOR/index.html" target="_blank">
-        <img src="img/logo.png" alt="Solgor" class="logo">
-      </a>
+  <img src="img/logo.png" alt="Solgor" class="logo">
+</a>
       <ul>
         <li><a href="https://solgor1.github.io/SOLGOR/trade.html">Trade</a></li>
         <li><a href="https://solgor1.github.io/SOLGOR/roadmap.html">Roadmap</a></li>
@@ -114,28 +45,72 @@
   </header>
 
   <main>
+    <div class="vignette hide"></div>
+    <img src="img/background.png" data-speedx="0.3" data-speedy="0.38" data-speedz="0" data-rotation="0"
+      data-distance="-200" class="parallax bg-img">
+    <img src="img/fog_7.png" data-speedx="0.27" data-speedy="0.32" data-speedz="0" data-rotation="0" data-distance="850"
+      class="parallax fog-7">
+    <img src="img/mountain_10.png" data-speedx="0.195" data-speedy="0.305" data-speedz="0" data-rotation="0"
+      data-distance="1100" class="parallax mountain-10">
+    <img src="img/fog_6.png" data-speedx="0.25" data-speedy="0.28" data-speedz="0" data-rotation="0"
+      data-distance="1400" class="parallax fog-6">
+    <img src="img/mountain_9.png" data-speedx="0.125" data-speedy="0.155" data-speedz="0.15" data-rotation="0.02"
+      data-distance="1700" class="parallax mountain-9">
+    <img src="img/mountain_8.png" data-speedx="0.1" data-speedy="0.11" data-speedz="0" data-rotation="0.02"
+      data-distance="1800" class="parallax mountain-8">
+    <img src="img/fog_5.png" data-speedx="0.16" data-speedy="0.105" data-speedz="0" data-rotation="0"
+      data-distance="1900" class="parallax fog-5">
+    <img src="img/mountain_7.png" data-speedx="0.1" data-speedy="0.1" data-speedz="0" data-rotation="0.09"
+      data-distance="2000" class="parallax mountain-7">
     <div class="content-panel">
-      <h2>Connect with Solgor</h2>
-      <div class="social-links-container">
-        <a href="https://twitter.com/solgor_official" class="social-link" target="_blank">
-          <img src="img/twitter.png" alt="TwitterX">
-        </a>
-        <a href="https://www.instagram.com/solgorthegorilla" class="social-link" target="_blank">
-          <img src="img/instagram.png" alt="Instagram">
-        </a>
-        <a href="https://t.me/+AUYRKvHXSCEwNjdi" class="social-link" target="_blank">
-          <img src="img/telegram.png" alt="Telegram">
-        </a>
-        <a href="https://discord.gg/CJjnDahRXK" class="social-link" target="_blank">
-          <img src="img/discord.png" alt="Discord">
-        </a>
-        <a href="https://zealy.io/c/solgorgor" class="social-link" target="_blank">
-          <img src="img/zealy.png" alt="Zealy">
-        </a>
-      </div>
+<h2>Socials</h2>
+<!-- Socials Section -->
+<div class="social-links-container" style="display: flex; flex-direction: column; align-items: center;">
+    <!-- Your social links here -->
+    <a href="https://twitter.com/solgor_official" class="social-link" target="_blank" animate="fadeInUp">
+        <img src="img/twitter.png" alt="TwitterX">
+    </a>
+    <a href="https://www.instagram.com/solgorthegorilla" class="social-link" target="_blank" animate="fadeInUp" style="animation-delay: 0.2s">
+        <img src="img/instagram.png" alt="Instagram">
+    </a>
+    <a href="https://t.me/+AUYRKvHXSCEwNjdi" class="social-link" target="_blank" animate="fadeInUp" style="animation-delay: 0.4s">
+        <img src="img/telegram.png" alt="Telegram">
+    </a>
+    <a href="https://discord.gg/CJjnDahRXK" class="social-link" target="_blank" animate="fadeInUp" style="animation-delay: 0.6s">
+        <img src="img/discord.png" alt="Discord">
+    </a>
+    <a href="https://zealy.io/c/solgorgor" class="social-link" target="_blank" animate="fadeInUp" style="animation-delay: 0.8s">
+        <img src="img/zealy.png" alt="Zealy">
+    </a>
+</div>
+<rssapp-wall id="qciBdDUZ0w97Mwjh"></rssapp-wall><script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script>
+  </div>
     </div>
+    <img src="img/mountain_6.png" data-speedx="0.065" data-speedy="0.05" data-speedz="0.05" data-rotation="0.12"
+      data-distance="2300" class="parallax mountain-6">
+    <img src="img/fog_4.png" data-speedx="0.135" data-speedy="0.04" data-speedz="0" data-rotation="0"
+      data-distance="2400" class="parallax fog-4">
+    <img src="img/mountain_5.png" data-speedx="0.08" data-speedy="0.03" data-speedz="0.13" data-rotation="0.1"
+      data-distance="2550" class="parallax mountain-5">
+    <img src="img/fog_3.png" data-speedx="0.11" data-speedy="0.018" data-speedz="0" data-rotation="0"
+      data-distance="2800" class="parallax fog-3">
+    <img src="img/mountain_4.png" data-speedx="0.059" data-speedy="0.024" data-speedz="0.35" data-rotation="0.14"
+      data-distance="3200" class="parallax mountain-4">
+    <img src="img/mountain_3.png" data-speedx="0.04" data-speedy="0.018" data-speedz="0.32" data-rotation="0.05"
+      data-distance="3400" class="parallax mountain-3">
+    <img src="img/fog_2.png" data-speedx="0.15" data-speedy="0.0115" data-speedz="0" data-rotation="0"
+      data-distance="3600" class="parallax fog-2">
+    <img src="img/mountain_2.png" data-speedx="0.0235" data-speedy="0.013" data-speedz="0.42" data-rotation="0.15"
+      data-distance="3800" class="parallax mountain-2">
+    <img src="img/mountain_1.png" data-speedx="0.027" data-speedy="0.018" data-speedz="0.53" data-rotation="0.2"
+      data-distance="4000" class="parallax mountain-1">
+    <img src="img/sun_rays.png" class="sun-rays hide">
+    <img src="img/black_shadow.png" class="black-shadow hide">
+    <img src="img/fog_1.png" data-speedx="0.12" data-speedy="0.01" data-speedz="0" data-rotation="0"
+      data-distance="4200" class="parallax fog-1">
   </main>
-  
+
+
   <script src="js/gsap.min.js"></script>
   <script src="js/app.js" defer></script>
 </body>

@@ -59,9 +59,9 @@ header ul a {
   border-radius: 20px;
   padding: 20px;
   text-align: center;
-  margin: 50px auto; /* Adjust margin as needed */
-  width: 80%; /* Adjust width as needed */
-  max-width: 600px; /* Adjust max-width as needed */
+  margin: 100px auto; /* Adjust margin as needed */
+  width: 90%; /* Adjust width as needed */
+  max-width: 900px; /* Adjust max-width as needed */
   position: relative;
   z-index: 99; /* Ensure the panel is above the parallax layers */
 }
@@ -75,7 +75,7 @@ header ul a {
 /* For phones */
 @media (max-width: 768px) {
   .content-panel {
-    margin: 30px auto; /* Adjust margin for phones */
+    margin: 50px auto; /* Adjust margin for phones */
     width: 90%; /* Adjust width for phones */
   }
 }
@@ -83,8 +83,8 @@ header ul a {
 /* For tablets */
 @media (min-width: 768px) and (max-width: 1024px) {
   .content-panel {
-    margin: 40px auto; /* Adjust margin for tablets */
-    width: 80%; /* Adjust width for tablets */
+    margin: 80px auto; /* Adjust margin for tablets */
+    width: 90%; /* Adjust width for tablets */
   }
 }
 

@@ -9,7 +9,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css">
 <style>
-  body {
+  /* Stil nur für die Roadmap-Seite */
+  body.roadmap-page {
     font-family: Arial, sans-serif;
     background-color: #333; /* dark grey background */
     color: #eee; /* light grey text */
@@ -17,7 +18,7 @@
     padding: 0;
   }
 
-  .section {
+  body.roadmap-page .section {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
@@ -27,34 +28,34 @@
     overflow: hidden;
   }
 
-  h2 {
+  body.roadmap-page h2 {
     color: #eee; /* light grey for section headings */
     text-align: center;
     margin-top: 0;
     padding-top: 10px;
   }
 
-  .roadmap-status {
+  body.roadmap-page .roadmap-status {
     margin-top: 20px;
   }
 
-  ul {
+  body.roadmap-page ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
   }
 
-  ul li {
+  body.roadmap-page ul li {
     padding: 10px 20px;
     border-bottom: 1px solid #555; /* darker grey border */
     transition: background-color 0.3s;
   }
 
-  ul li:last-child {
+  body.roadmap-page ul li:last-child {
     border-bottom: none;
   }
 
-  ul li:hover {
+  body.roadmap-page ul li:hover {
     background-color: #555; /* slightly lighter grey background on hover */
   }
 </style>
@@ -95,6 +96,7 @@
       data-distance="2000" class="parallax mountain-7">
     <div class="content-panel">
 <!-- Roadmap Section -->
+<body class="roadmap-page">
 <div class="section">
   <h2>Roadmap</h2>
   <!-- Done -->
@@ -117,6 +119,7 @@
   </div>
 </div>
     </div>
+</body>
     <img src="img/mountain_6.png" data-speedx="0.065" data-speedy="0.05" data-speedz="0.05" data-rotation="0.12"
       data-distance="2300" class="parallax mountain-6">
     <img src="img/fog_4.png" data-speedx="0.135" data-speedy="0.04" data-speedz="0" data-rotation="0"

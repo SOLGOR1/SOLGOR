@@ -9,22 +9,22 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css">
 <style>
-    .social-links-container {
-        text-align: center; /* Center align the content */
-    }
-
-    .social-link {
-        margin-right: 60px; /* Adjust this value to increase or decrease the space */
-    }
+.social-link {
+    margin-right: 60px; /* Adjust this value to increase or decrease the space */
+}
 .content-panel {
     overflow-y: scroll;
     scrollbar-width: thin;
     scrollbar-color: darkgrey;
-    height: 100%; /* Damit die Scrollleiste nur innerhalb der Höhe des Panels sichtbar ist */
+    height: 100%;
+    display: flex; /* Flexbox verwenden, um das Layout anzupassen */
+    flex-direction: column; /* Anordnung der Elemente in einer Spalte */
 }
 
 .social-links-container {
+    flex: 1; /* Damit die Social-Links den verfügbaren Platz einnehmen */
     padding-right: 10px; /* Damit die Scrollleiste nicht über die Social Links geht */
+    text-align: center; /* Center align the content */
 }
 </style>
 </head>

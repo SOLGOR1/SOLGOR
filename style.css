@@ -8,6 +8,22 @@
   box-sizing: border-box;
 }
 
+.content-panel {
+  background: linear-gradient(145deg, #333333, #1a1a1a);
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  margin: 50px auto; /* Adjust margin as needed */
+  width: 80%; /* Adjust width as needed */
+  max-width: 600px; /* Adjust max-width as needed */
+}
+
+.content-panel h2,
+.content-panel h1 {
+  margin: 10px 0;
+  color: white;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
